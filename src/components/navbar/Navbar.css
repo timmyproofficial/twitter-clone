@@ -13,7 +13,7 @@
 .nav__navMenu {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .nav__navBtn {
@@ -29,4 +29,20 @@
   padding: 1.7rem 0;
   border-radius: 10rem;
   border: none;
+}
+
+.nav__profile {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.nav__profile-name > h3 {
+  font-size: 1.6rem;
+}
+
+.nav__profile-name > p {
+  font-size: 1.4rem;
+  color: #808080;
 }
