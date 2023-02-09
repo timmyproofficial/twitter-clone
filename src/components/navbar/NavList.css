@@ -1,0 +1,19 @@
+.navList {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  align-self: flex-start;
+  padding: 1.2rem;
+  border-radius: 10rem;
+}
+
+.navList:hover {
+  background-color: #ebebeb;
+}
+
+.navList__icon {
+  font-size: 2.8rem;
+}
+.navList__title {
+  font-size: 2.2rem;
+}
