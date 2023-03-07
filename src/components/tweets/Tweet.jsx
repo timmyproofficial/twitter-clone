@@ -8,6 +8,8 @@ import CachedIcon from '@mui/icons-material/Cached';
 import EqualizerIcon from '@mui/icons-material/Equalizer';
 import UploadIcon from '@mui/icons-material/Upload';
 
+import './Tweet.css';
+
 const Tweet = () => {
   return (
     <article className="tweet">
@@ -21,12 +23,12 @@ const Tweet = () => {
       <div className="tweet__right">
         <header className="tweet__rightHeader">
           <div>
-            <span>Ayanlola Bayo</span>
-            <span>
-              <VerifiedIcon />
-            </span>
-            <span>@timmypro_</span>
-            <span>. 12h</span>
+            <span className="display__name">Ayanlola Bayo</span>
+            <VerifiedIcon
+              style={{ color: '#1d9bf0', fontWeight: 500 }}
+            ></VerifiedIcon>
+
+            <span className="username">@timmypro_ . 12h</span>
           </div>
           <MoreHorizIcon />
         </header>
@@ -41,19 +43,19 @@ const Tweet = () => {
         <footer className="tweet__rightFooter">
           <div>
             <ChatBubbleOutlineIcon />
-            70
+            750
           </div>
           <div>
             <FavoriteBorderIcon />
-            70
+            21,370
           </div>
           <div>
             <CachedIcon />
-            70
+            7,770
           </div>
           <div>
             <EqualizerIcon />
-            70
+            9,970
           </div>
           <div>
             <UploadIcon />

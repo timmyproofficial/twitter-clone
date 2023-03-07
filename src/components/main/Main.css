@@ -2,7 +2,6 @@
   flex: 0.4;
   border-right: 0.1rem solid #e3e3e3;
   border-left: 0.1rem solid #e3e3e3;
-  padding-top: 1rem;
   display: grid;
   grid-template-rows: 10rem 1fr;
 }
@@ -10,9 +9,12 @@
 .main__header {
   position: sticky;
   top: 0;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
   border-bottom: 0.1rem solid #e3e3e3;
+  z-index: 1000;
 }
 
 .main__header > h1,
@@ -41,9 +43,17 @@
   background-color: #ebebeb;
 }
 
+.main__body {
+  /* overflow: scroll; */
+}
+
+.main__body::-webkit-scrollbar {
+  /* display: none; */
+}
+
 .section__inputBox {
 }
 
 .section__tweets {
-  padding: 0.8rem 1.2rem;
+  /* padding: 0.8rem 1.2rem; */
 }

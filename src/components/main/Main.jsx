@@ -17,7 +17,7 @@ const Main = () => {
           </div>
         </div>
       </header>
-      <section>
+      <section class="main__body">
         <section className="section__inputBox">
           <InputBox />
         </section>

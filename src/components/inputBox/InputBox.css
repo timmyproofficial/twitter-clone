@@ -2,7 +2,7 @@
   padding: 0.8rem 1.2rem;
   border-bottom: 1px solid #ededed;
   display: flex;
-  gap: 2.4rem;
+  gap: 1.2rem;
 }
 
 .inputBox__left {
@@ -53,7 +53,7 @@
 
 .inputBox__rightBottom-options {
   display: flex;
-  gap: 1.2rem;
+  gap: 2.4rem;
 }
 
 .inputBox__rightBottom-btnContainer > button {
