@@ -1,4 +1,6 @@
 import React from 'react';
+import InputBox from '../inputBox/InputBox';
+import Tweet from '../tweets/Tweet';
 import './Main.css';
 
 const Main = () => {
@@ -15,7 +17,16 @@ const Main = () => {
           </div>
         </div>
       </header>
-      <section></section>
+      <section>
+        <section className="section__inputBox">
+          <InputBox />
+        </section>
+        <section className="section__tweets">
+          <Tweet />
+          <Tweet />
+          <Tweet />
+        </section>
+      </section>
     </main>
   );
 };

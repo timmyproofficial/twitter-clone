@@ -2,6 +2,48 @@
   flex: 0.4;
   border-right: 0.1rem solid #e3e3e3;
   border-left: 0.1rem solid #e3e3e3;
+  padding-top: 1rem;
   display: grid;
   grid-template-rows: 10rem 1fr;
+}
+
+.main__header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.1rem solid #e3e3e3;
+}
+
+.main__header > h1,
+.main__headerBottom {
+  flex: 1;
+}
+
+.main__header > h1 {
+  padding-left: 1.8rem;
+}
+
+.main__headerBottom {
+  display: flex;
+}
+
+.main__headerBottom > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  font-size: 1.4rem;
+}
+
+.main__headerBottom > div:hover {
+  background-color: #ebebeb;
+}
+
+.section__inputBox {
+}
+
+.section__tweets {
+  padding: 0.8rem 1.2rem;
 }
