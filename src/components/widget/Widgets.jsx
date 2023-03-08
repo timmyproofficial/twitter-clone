@@ -1,10 +1,13 @@
 import React from 'react';
+import SearchBar from './SearchBar';
+import Trends from './Trends';
 import './Widgets.css';
 
 const Widgets = () => {
   return (
     <section className="widgets">
-      <h1>Widgets</h1>
+      <SearchBar />
+      <Trends />
     </section>
   );
 };

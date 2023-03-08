@@ -10,7 +10,7 @@ import UploadIcon from '@mui/icons-material/Upload';
 
 import './Tweet.css';
 
-const Tweet = () => {
+const Tweet = ({ tweetTxt }) => {
   return (
     <article className="tweet">
       <div className="tweet__left">
@@ -33,12 +33,7 @@ const Tweet = () => {
           <MoreHorizIcon />
         </header>
         <section className="tweet__rightMain">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor
-            iure tenetur tempora, sunt praesentium aspernatur, ipsam corporis
-            veritatis ad minima, vero reiciendis est maiores impedit? Quaerat
-            rem illo eligendi!
-          </p>
+          <p>{tweetTxt}</p>
         </section>
         <footer className="tweet__rightFooter">
           <div>

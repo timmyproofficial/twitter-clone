@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Avatar } from '@mui/material';
 import React from 'react';
 import ImageIcon from '@mui/icons-material/Image';
@@ -8,7 +9,26 @@ import PendingActionsIcon from '@mui/icons-material/PendingActions';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import './InputBox.css';
 
-const InputBox = () => {
+const InputBox = ({ filterText, onSetFilterTextChange, onSetPosts, posts }) => {
+  const handleTextChange = (e) => {
+    onSetFilterTextChange(e.target.value);
+  };
+
+  const handleSetPosts = () => {};
+
+  const handleSubmitTweet = () => {
+    if (filterText) {
+      const post = {
+        id: posts && posts.length + 1,
+        title: filterText,
+      };
+      onSetPosts([post, ...posts]);
+      onSetFilterTextChange('');
+    } else {
+      alert('Please, type your tweet');
+    }
+  };
+
   return (
     <div className="inputBox">
       <div className="inputBox__left">
@@ -24,6 +44,9 @@ const InputBox = () => {
           <p className="inputBox__rightTop-box">Everyone</p>
           <input
             type="text"
+            name="filterText"
+            value={filterText}
+            onChange={handleTextChange}
             className="inputBox__rightInput"
             placeholder="What's happening?"
           />
@@ -41,7 +64,7 @@ const InputBox = () => {
             <LocationOnIcon style={{ color: '#1d9bf0', fontSize: '2rem' }} />
           </div>
           <div className="inputBox__rightBottom-btnContainer">
-            <button disabled>Tweet</button>
+            <button onClick={handleSubmitTweet}>Tweet</button>
           </div>
         </div>
       </div>

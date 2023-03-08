@@ -1,0 +1,32 @@
+.trends {
+  background-color: #eff3f4;
+  padding: 1.5rem;
+  border-radius: 1.8rem;
+}
+
+.trends > h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.trends__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.trends__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.trends__card > div {
+  color: #808080;
+  font-size: 1.3rem;
+  /* font-weight: 500; */
+}
+
+.trends__card h3 {
+  font-size: 1.4rem;
+}
