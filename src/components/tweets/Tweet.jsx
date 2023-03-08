@@ -25,7 +25,7 @@ const Tweet = ({ tweetTxt }) => {
           <div>
             <span className="display__name">Ayanlola Bayo</span>
             <VerifiedIcon
-              style={{ color: '#1d9bf0', fontWeight: 500 }}
+              style={{ color: '#c0392b', fontWeight: 500 }}
             ></VerifiedIcon>
 
             <span className="username">@timmypro_ . 12h</span>

@@ -23,7 +23,8 @@
 }
 
 .nav__navBtn > button {
-  background-color: #1d9bf0;
+  /* background-color: #1d9bf0; */
+  background-color: #c0392b;
   color: #fff;
   font-size: 1.8rem;
   font-weight: bold;

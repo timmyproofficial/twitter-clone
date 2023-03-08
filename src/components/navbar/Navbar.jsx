@@ -1,5 +1,6 @@
 import React from 'react';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import Face5Icon from '@mui/icons-material/Face5';
 import NavList from './NavList';
 import { navData } from './Navbar-data';
 import './Navbar.css';
@@ -10,7 +11,8 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <div className="nav__logo">
-        <TwitterIcon style={{ fontSize: '3.3rem', color: '#1d9bf0' }} />
+        {/* <TwitterIcon style={{ fontSize: '3.3rem', color: '#1d9bf0' }} /> */}
+        <Face5Icon style={{ fontSize: '3.3rem', color: '#c0392b' }} />
       </div>
 
       <div className="nav__navMenu">
@@ -20,7 +22,7 @@ const Navbar = () => {
       </div>
 
       <div className="nav__navBtn">
-        <button>Tweet</button>
+        <button>Post</button>
       </div>
 
       <div className="nav__profile">

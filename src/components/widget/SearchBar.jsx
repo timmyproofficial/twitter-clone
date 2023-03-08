@@ -11,7 +11,7 @@ const SearchBar = () => {
           type="text"
           name=""
           id=""
-          placeholder="Search Twitter"
+          placeholder="Search"
           className="search__boxInput"
         />
       </div>

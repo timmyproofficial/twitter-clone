@@ -54,17 +54,26 @@ const InputBox = ({ filterText, onSetFilterTextChange, onSetPosts, posts }) => {
         </div>
         <div className="inputBox__rightBottom">
           <div className="inputBox__rightBottom-options">
-            <ImageIcon style={{ color: '#1d9bf0', fontSize: '2rem' }} />
+            {/* <ImageIcon style={{ color: '#1d9bf0', fontSize: '2rem' }} />
             <GifBoxIcon style={{ color: '#1d9bf0', fontSize: '2rem' }} />
             <BallotIcon style={{ color: '#1d9bf0', fontSize: '2rem' }} />
             <EmojiEmotionsIcon style={{ color: '#1d9bf0', fontSize: '2rem' }} />
             <PendingActionsIcon
               style={{ color: '#1d9bf0', fontSize: '2rem' }}
             />
-            <LocationOnIcon style={{ color: '#1d9bf0', fontSize: '2rem' }} />
+            <LocationOnIcon style={{ color: '#1d9bf0', fontSize: '2rem' }} /> */}
+
+            <ImageIcon style={{ color: '#c0392b', fontSize: '2rem' }} />
+            <GifBoxIcon style={{ color: '#c0392b', fontSize: '2rem' }} />
+            <BallotIcon style={{ color: '#c0392b', fontSize: '2rem' }} />
+            <EmojiEmotionsIcon style={{ color: '#c0392b', fontSize: '2rem' }} />
+            <PendingActionsIcon
+              style={{ color: '#c0392b', fontSize: '2rem' }}
+            />
+            <LocationOnIcon style={{ color: '#c0392b', fontSize: '2rem' }} />
           </div>
           <div className="inputBox__rightBottom-btnContainer">
-            <button onClick={handleSubmitTweet}>Tweet</button>
+            <button onClick={handleSubmitTweet}>Post</button>
           </div>
         </div>
       </div>

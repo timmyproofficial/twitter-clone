@@ -23,3 +23,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (max-width: 70rem) {
+  .app {
+    width: 90rem;
+    margin: 0 auto;
+  }
+
+  .main {
+    flex: 1;
+  }
+  .widgets,
+  .trends,
+  .search,
+  .nav__navBtn > button {
+    display: none;
+  }
+
+  .nav {
+    flex-shrink: 1;
+    flex-grow: 0;
+  }
+}
